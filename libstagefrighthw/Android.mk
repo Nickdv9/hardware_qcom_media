@@ -32,6 +32,9 @@ endif
 
 LOCAL_C_INCLUDES:= \
         frameworks/native/include/media/openmax \
+        frameworks/native/libs/nativewindow/include/ \
+        frameworks/native/libs/arect/include/ \
+        frameworks/native/libs/nativebase/include \
         frameworks/native/include/media/hardware
 
 LOCAL_SHARED_LIBRARIES :=       \
