@@ -75,7 +75,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE                    := libOmxVenc
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libmm-venc-def)
-LOCAL_CLANG := false
+LOCAL_CLANG := true
 LOCAL_C_INCLUDES                := $(libmm-venc-inc)
 LOCAL_ADDITIONAL_DEPENDENCIES   := $(libmm-venc-add-dep)
 
@@ -118,7 +118,7 @@ LOCAL_STATIC_LIBRARIES    := libOmxVidcCommon
 
 LOCAL_SRC_FILES   := src/omx_video_base.cpp
 LOCAL_SRC_FILES   += src/omx_swvenc_mpeg4.cpp
-LOCAL_CLANG := false
+LOCAL_CLANG := true
 
 include $(BUILD_SHARED_LIBRARY)
 endif
@@ -135,7 +135,7 @@ LOCAL_MODULE                    := libOmxSwVencHevc
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libmm-venc-def)
 LOCAL_C_INCLUDES                := $(libmm-venc-inc)
-LOCAL_CLANG := false
+LOCAL_CLANG := true
 LOCAL_ADDITIONAL_DEPENDENCIES   := $(libmm-venc-add-dep)
 
 LOCAL_PRELINK_MODULE      := false
